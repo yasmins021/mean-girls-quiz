@@ -83,25 +83,36 @@ progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
   acceptingAnswer = true;
 };
 
+
 choices.forEach(choice => {
   choice.addEventListener('click', e => {
-    if (!acceptingAnswer) return;
-    acceptingAnswer = false;
-    const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
-    const classToApply = 
+    handleChoiceSelection(e.target);
+  });
+
+   choice.addEventListener('touchstart', e => {
+    handleChoiceSelection(e.target);
+  });
+}); 
+    
+    
+    
+    
+handleChoiceSelection = selectedChoice => {
+  if (!acceptingAnswer) return;
+  acceptingAnswer = false;
+  const selectedAnswer = selectedChoice.dataset["number"];
+  const classToApply = 
     selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-    if(classToApply === 'correct'){
-      incrementScore(CORRECT_BONUS);
-    }
-    selectedChoice.parentElement.classList.add(classToApply);
-    setTimeout( () =>{
-     
-      selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
-    },1000);
-   });
-});
+  if(classToApply === 'correct'){
+    incrementScore(CORRECT_BONUS);
+  }
+  selectedChoice.parentElement.classList.add(classToApply);
+  setTimeout( () =>{
+    selectedChoice.parentElement.classList.remove(classToApply);
+    getNewQuestion();
+  },1000);
+};
+
  incrementScore = num => {
    score +=num;
    scoreText.innerText = score;
