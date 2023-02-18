@@ -272,3 +272,84 @@ margin-bottom: 4rem;
   margin-top: 7rem; /* adjust margin top */
   padding: 2rem;
 }
+
+
+
+
+@media (max-width: 767px) {
+  body {
+    background-image: none;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    height: 100px;
+  }
+
+  .container {
+    flex-direction: column;
+    max-width: none;
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .hud-prefix {
+    font-size: 1.4rem;
+  }
+
+  .choice-container {
+    font-size: 3.5rem;
+  }
+
+  .choice-prefix {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .choice-text {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  #progressBar {
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+  }
+
+  #progressBarFull {
+    height: 1.6rem;
+  }
+
+  .Gossip {
+    height: 200px;
+  }
+
+  .snowflake {
+    font-size: 70px;
+  }
+}
+
+
+
+
