@@ -84,7 +84,7 @@ progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 };
 
 choices.forEach(choice => {
-  choice.addEventListener('click', e => {
+  choice.addEventListener('touchstart', e => {
     if (!acceptingAnswer) return;
     acceptingAnswer = false;
     const selectedChoice = e.target;
