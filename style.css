@@ -278,7 +278,7 @@ margin-bottom: 4rem;
 
 @media (max-width: 767px) {
   body {
-    background-image: none;
+    background-image: url("Images/bow.png");
   }
 
   header {
