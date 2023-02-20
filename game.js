@@ -147,3 +147,4 @@ const saveHighScore = (e) => {
 };
 
 saveScoreBtn.addEventListener('click', saveHighScore);
+startGame();
