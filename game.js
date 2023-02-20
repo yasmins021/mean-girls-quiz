@@ -85,11 +85,11 @@ progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
 
 choices.forEach(choice => {
-  choice.addEventListener("click", e => {
+  choice.addEventListener('click', e => {
     handleChoiceSelection(e.target);
   });
 
-   choice.addEventListener("touchstart", e => {
+   choice.addEventListener('touchstart', e => {
     handleChoiceSelection(e.target);
   });
 }); 
