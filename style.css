@@ -126,7 +126,7 @@ border-radius: 30px;
 .choice-container:hover{
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem rgba(24, 90, 123, 0.5); 
-  transform:translateY(-0.1rem)
+  transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
  
