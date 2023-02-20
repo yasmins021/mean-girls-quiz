@@ -11,7 +11,7 @@ let availableQuestions = [];
 
 let questions = [
   {
-    question: "  What is the name of the iconic book that contained insults about almost every person in the school?",
+    question: "  What is the name of the  book that contained insults about every person in the school?",
     choice1: "Burn Book",
     choice2: " The Bible",
     choice3: "Gossip Lounge",
