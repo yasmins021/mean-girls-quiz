@@ -1,4 +1,4 @@
-:root{
+root{
   --font-family:'Fontdiner Swanky', cursive;
 }
 body{
@@ -222,6 +222,24 @@ input{
 }
 
 
+/*  loader*/
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid rgb(44, 142, 44);
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* added missing "transform:" */
+  }
+}
 
 
 
@@ -349,6 +367,7 @@ margin-bottom: 4rem;
     font-size: 70px;
   }
 }
+
 
 
 
