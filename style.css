@@ -168,7 +168,7 @@ text-align: left;
   padding: 1.2rem;
 }
 .small-img {
-  width: 40%;
+  width: 50%;
 
 }
 .hud-prefix{
@@ -207,19 +207,7 @@ input{
 }
 
   
-.Gossip{
-  position: fixed;
-  left: 0px;
-  bottom: 0;
-  width: 200%;
-  height: 350px; /* adjust as needed */
-  min-height: 200px; /* ensure a minimum height */
-  color: white;
-  text-align: center;
-  background-image: url("Images/like.png");
-  background-repeat: repeat-x; 
-  background-position: bottom left;
-}
+
 
 
 /*  loader*/
@@ -364,7 +352,7 @@ margin-bottom: 4rem;
   }
 
   .snowflake {
-    font-size: 70px;
+    font-size: 10px;
   }
 }
 
