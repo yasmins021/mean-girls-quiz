@@ -9,44 +9,22 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-  {
-    question: "  What is the name of the  book that contained insults about every person in the school?",
-    choice1: "Burn Book",
-    choice2: " The Bible",
-    choice3: "Gossip Lounge",
-    choice4: "The Fetch",
-    answer: 1
-  },
-  {
-    question: "What is the name of the Math Club that Cady was in ?",
-    choice1: "Calculus Hero",
-    choice2: "Calc-oholics",
-    choice3: "Mathletes",
-    choice4: "Axis Anything",
-    answer: 3
-  },
-  {
-    question: "Which member was NOT part of the plastics?",
-    choice1: "Gretchen Wieners",
-    choice2: "Regina George",
-    choice3: "Karen Smith",
-    choice4: "Lizzy Peters",
-    answer: 4
-  },
-  {
-    question: "Who are the first friends that Cady makes on her first day of school?",
-    choice1: "Janis Ian and Damian Leigh",
-    choice2: "Lizzy Caplan Niel Flynn",
-    choice3: "Ely Henry and Daria Malen",
-    choice4: "Jane Morrison and Alan Skye",
-    answer: 1
-  }
-];
-
+let questions = [];
+fetch("questions.json")
+.then( res =>{
+ return res.json();
+})
+.then(loadedQuestions =>{
+console.log(loadedQuestions);
+questions = loadedQuestions;
+startGame();
+});
 // constants
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 4;
+
+
+
 
 startGame = () => {
   questionCounter = 0;
@@ -117,6 +95,6 @@ choices.forEach(choice => {
    score +=num;
    scoreText.innerText = score;
  };
-startGame();
+
 
 
