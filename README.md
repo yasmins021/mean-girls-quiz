@@ -11,7 +11,9 @@ This music application is a fun and interactive game that tests your knowledge o
 
 ## Technologies Used
 
-- HTML,CSS,and JavaScript
+- HTML
+- CSS
+- JavaScript
 
 
 ## Contact
